@@ -1,3 +1,4 @@
+/*Global Ajustment*/
 * {
     font-family: cursive;
 }
@@ -8,6 +9,37 @@ h1 {
 h2 {
     font-size: 1rem;
 }
+/* HEADER SECTION*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+.header-profile{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.header-nav {
+    flex:1;
+}
+.header-nav ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-btn {
+    flex:2;
+    display: flex;
+    justify-content: space-around;
+}
+/* MAIN SECTION CARD*/
 .main {
     height: 500px;
     display: flex;
