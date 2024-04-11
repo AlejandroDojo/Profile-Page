@@ -173,7 +173,7 @@ body {
 .education-header {
     background-color: var(--background-black);
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 2px;
     color: var(--text-white-color);
     text-align:initial;
 }
@@ -181,8 +181,10 @@ body {
     padding-left: 1rem;
 }
 .education-list {
-    width: 99%;
+    width: 100%;
     border: 2px solid var(--border-color);
+    border-top: none;
+    
 }
 .education-list-items ul {
     display: flex;
