@@ -24,6 +24,9 @@ body {
 .active {
     color: var(--text-white-color)!important; 
 }
+.cursor-pointer {
+    cursor: pointer;
+}
 /* HEADER SECTION*/
 .header {
     display: flex;
@@ -84,7 +87,7 @@ body {
 .main {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     gap: 2rem;
     flex-direction: column;
     flex: 1;
@@ -98,6 +101,7 @@ body {
     margin: 0;
     border: 2px solid var(--border-color);
     position: relative;
+    flex: 1;
 }
 .user-background {
     height: 80px;
@@ -156,11 +160,52 @@ body {
 }
 /* EDUCATION SECTION*/
 
-
-
-
-
-
+.education {
+    flex: 1;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.education-header {
+    background-color: var(--background-black);
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--text-white-color);
+    text-align:initial;
+}
+.education-header h2 {
+    padding-left: 1rem;
+}
+.education-list {
+    width: 99%;
+    border: 2px solid var(--border-color);
+}
+.education-list-items ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.education-title,
+.education-data,
+.education-merits {
+    padding: 0.4rem;
+    padding-left: 1rem;
+}
+.education-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.education-data {
+    color: var(--text-main-color);
+    font-size: 1.2rem;
+}
+.education-merits {
+    font-size: 1.2rem;
+}
 
 /* ASIDE SECTION*/
 .aside {
@@ -268,6 +313,10 @@ body {
     
     width: 30px;
     height: 30px;
+}
+.aside-request-accept,
+.aside-request-deny:hover {
+    cursor: pointer;
 }
 .aside-your-connections {
     width: 250px;
