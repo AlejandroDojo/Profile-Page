@@ -121,6 +121,9 @@ body {
 
 .main-user-icon {
     position: absolute;
+    background-image: url(../icons/user-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 9%;
     width: 100px;
     height: 100px;
@@ -234,6 +237,7 @@ body {
     background-image: url(../icons/user-circle.png);
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
 }
@@ -250,6 +254,7 @@ body {
     background-image: url(../icons/close-circle.png);
     background-size: contain;
     background-repeat: no-repeat;
+    
     width: 30px;
     height: 30px;
 }
@@ -263,4 +268,11 @@ body {
 }
 .aside-request-name {
     flex: 2;
+}
+.aside-view-more {
+    flex: 1;
+    width: 87%;
+    width: 0 20rem;
+    padding: 1rem;
+    border-top: solid 1px var(--border-color);
 }
