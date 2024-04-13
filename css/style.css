@@ -127,14 +127,13 @@ body {
 
 .user-user-icon {
     position: absolute;
-    background-image: url(../icons/user-circle.png);
+    background-image: url(../images/jane-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     top: 9%;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    filter: invert(100%);
     border: 3px solid var(--border-color);
 }
 .user-map, .user-edit {
@@ -272,7 +271,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.7rem;
 }
 .aside-request-userinfo {
     display: flex;
@@ -293,9 +292,28 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
+#aside-icon-phils  {
+    background-image: url(../images/phil-s.jpg);
+}
+#aside-icon-todd {
+    background-image: url(../images/todd-s.jpg);
+}
+#aside-icon-adrien {
+    background-image: url(../images/adrien-s.jpg);
+}
+#aside-icon-alayne {
+    background-image: url(../images/alayne-s.jpg);
+}
+#aside-icon-anne {
+    background-image: url(../images/anne-s.jpg);
+}
+#aside-icon-arry {
+    background-image: url(../images/arry-s.jpg);
+}
+
 .aside-request-accept {
     flex: 1;
     background-image: url(../icons/accept-circle.png);
