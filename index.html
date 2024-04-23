@@ -34,7 +34,7 @@
                 <div class="user-description">
                     <div class="user-user-icon"></div>
                     <div class="user-section">
-                        <h2>Jane Doe</h2>
+                        <h2 id="user-name">Jane Doe</h2>
                         <div class="user-map">
                             <img class="user-icon gear" src="./icons/map-marker.png" alt="icon of map marker">
                             <h3 class="user-location">Seattle</h3>
@@ -43,7 +43,7 @@
                         <p>Master of shadows and the Internet!</p>
                         <div class="user-edit">
                             <img class="user-icon" src="./icons/gear.png" alt=" a GEAR">
-                            <p class="user-gear"><a>edit profile</a></p>
+                            <p class="user-gear" onclick="cambiarNombre()"><a>edit profile</a></p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <section class="aside-content">
                 <div class="aside-connection">
                     <div class="aside-title">
-                        <div class="aside-circle">2</div>
+                        <div class="aside-circle" id="connectionRequestNumber">2</div>
                         <h2>Connection Requests</h2>
                     </div>
                     <div class="aside-request">
@@ -83,8 +83,8 @@
                                 <p class="aside-request-name">Todd E</p>
                             </div>
                             <div class="aside-request-useracept">
-                                <div class="aside-request-accept"></div>
-                                <div class="aside-request-deny"></div>
+                                <div class="aside-request-accept" onclick="agregarConexion(this)"></div>
+                                <div class="aside-request-deny" onclick="removerConexion(this)"></div>
                             </div>
                         </div>
                         <div class="aside-request-info">
@@ -93,18 +93,18 @@
                                 <p class="aside-request-name">Phil</p>
                             </div>
                             <div class="aside-request-useracept">
-                                <div class="aside-request-accept"></div>
-                                <div class="aside-request-deny"></div>
+                                <div class="aside-request-accept" onclick="agregarConexion(this)"></div>
+                                <div class="aside-request-deny" onclick="removerConexion(this)"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="aside-your-connections">
+                <div class="aside-your-connections" >
                     <div class="aside-title">
-                        <div class="aside-circle">500+</div>
+                        <div class="aside-circle"><span id="totalConnections">500</span>+</div>
                         <h2>Your Connections</h2>
                     </div>
-                    <div class="aside-request">
+                    <div class="aside-request" id="myConnections">
                         <div class="aside-request-info">
                             <div class="aside-request-icon" id="aside-icon-adrien"></div>
                             <p class="aside-request-name">Adrien</p>
@@ -121,13 +121,15 @@
                             <div class="aside-request-icon" id="aside-icon-arry"></div>
                             <p class="aside-request-name">Arry</p>
                         </div>
-                        <div class="aside-view-more">
-                            <p class="user-gear"><a>View More</a></p>
-                        </div>
+                        
+                    </div>
+                    <div class="aside-view-more aside-request">
+                        <p class="user-gear"><a>View More</a></p>
                     </div>
                 </div>
             </section>
         </aside>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
